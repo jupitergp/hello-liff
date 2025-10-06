@@ -33,7 +33,7 @@ export default function HomePage() {
           // ถ้ายังไม่ล็อกอิน ให้ redirect ไปหน้าล็อกอินของ LINE
           // หมายเหตุ: โดยปกติ LIFF จะจัดการเรื่องนี้ให้เองเมื่อเปิดใน LINE
           // แต่การเรียก liff.login() จะเป็นการบังคับให้ล็อกอินทันที
-          // liff.login(); 
+          liff.login(); 
         }
       } catch (e: unknown) {
         // จัดการ Error ที่อาจเกิดขึ้น
